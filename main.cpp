@@ -6,6 +6,7 @@ using namespace std;
 
 int main()
 {
+  //same as example output
   TriangleNumberCalculator calculate;
   cout << calculate.value(1) << endl;
   cout << calculate.value(2) << endl;
