@@ -1,3 +1,7 @@
+#pragma once
+
+#include <iostream>
+
 class TriangleNumberCalculator
 {
 private:
@@ -24,4 +28,25 @@ public:
     {
         return value(n) - value(m);
     }
+
+    // multiplies the nth and mth triangular numbers
+    int multiply(int n, int m)
+    {
+        return value(n) * value(m);
+    }
+
+    // divides the nth and mth triangular numbers
+    int divide(int n, int m)
+    {
+        int denominator = value(m);
+
+        if (denominator == 0)
+        {
+            std::cout << "Error: cannot divide by zero" << std::endl;
+            return 0;
+        }
+
+        return (value(n)) / denominator;
+    }
+
 };

@@ -42,3 +42,24 @@ TEST_CASE("check if TriangleNumberCalculator subtract works")
     REQUIRE(calc.subtract(2, 3) == -3);
     REQUIRE(calc.subtract(4, 2) == 7);
 }
+
+TEST_CASE("check if TriangleNumberCalculator multiply works")
+{
+    TriangleNumberCalculator calc;
+
+    REQUIRE(calc.multiply(1, 1) == 1);
+    REQUIRE(calc.multiply(2, 3) == 18);
+    REQUIRE(calc.multiply(4, 2) == 30);
+}
+
+TEST_CASE("check if TriangleNumberCalculator divide works")
+{
+    TriangleNumberCalculator calc;
+
+    REQUIRE(calc.divide(1, 1) == 1);
+    REQUIRE(calc.divide(2, 3) == 0);
+    REQUIRE(calc.divide(4, 2) == 3);
+    REQUIRE(calc.divide(4, 0) == 0);
+
+}
+
